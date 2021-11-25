@@ -22,8 +22,8 @@
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Start Bootstrap</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
+                <li class="sidebar-nav-item"><a href="../index.html">Home</a></li>
                 <li class="sidebar-nav-item"><a href="#about">About</a></li>
                 <li class="sidebar-nav-item"><a href="#services">Services</a></li>
                 <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
@@ -158,14 +158,14 @@
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+                <!-- <h2 class="mb-4">The buttons below are impossible to resist...</h2>
                 <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a> -->          
             </div>
         </section>
         <!-- Map-->
         <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357585.076521621!2d-74.01048414282262!3d45.557699585064015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQywgQ2FuYWRh!5e0!3m2!1sfr!2seg!4v1637827404425!5m2!1sfr!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <br />
             <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
         </div>
@@ -182,6 +182,26 @@
                     <li class="list-inline-item">
                         <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
                     </li>
+                    <p style="background-color:#1D809F">
+                        <!--
+                            PeoplePerHour Profile Widget
+                            The div#pph-hire me is the element
+                            where the iframe will be inserted.
+                            You may move this element wherever
+                            you need to display the widget
+                        -->
+                        <div id="pph-hireme"></div>
+                        <script type="text/javascript">
+                        (function(d, s) {
+                            var useSSL = 'https:' == document.location.protocol;
+                            var js, where = d.getElementsByTagName(s)[0],
+                            js = d.createElement(s);
+                            js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1053765164/6332859.js?width=970&height=130&orientation=horizontal&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+                            try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+                        }(document, 'script'));
+                        </script>
+                    </p>
+
                 </ul>
                 <p class="text-muted small mb-0">Copyright &copy; Your Website 2021</p>
             </div>

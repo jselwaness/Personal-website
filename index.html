@@ -16,14 +16,17 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">James Selwaness</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Portrait_fenetre_01_tinypng.jpg" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
+
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="section_portfolio\index.html">Portfolio</a></li>
@@ -35,7 +38,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="section_blog\index.html">Blog</a></li>
                     
                 </ul>
-            </div>
+              
         </nav>
         <!-- Page Content-->
         <div class="container-fluid p-0">
@@ -229,10 +232,32 @@
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             <a href="assets/SAS Certified Specialist_ Base Programming Using SAS 9.4 certificate_JS.pdf">SAS Certified Specialist</a>
                         </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            <a href="assets/world_bank_data_for_better_lives.pdf">World Bank - Data for Better Lives</a>
+                        </li>
                     </ul>
                 </div>
+
             </section>
         </div>
+          <!--
+    PeoplePerHour Profile Widget
+    The div#pph-hire me is the element
+    where the iframe will be inserted.
+    You may move this element wherever
+    you need to display the widget
+-->
+<div id="pph-hireme" style="text-align:right;object-position: right;"></div>
+<script type="text/javascript">
+(function(d, s) {
+    var useSSL = 'https:' == document.location.protocol;
+    var js, where = d.getElementsByTagName(s)[0],
+    js = d.createElement(s);
+    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1053765164/6332859.js?width=468&height=84&orientation=horizontal&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+}(document, 'script'));
+</script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
