@@ -14,9 +14,11 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!--snowflakes-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
     </head>
     <body id="page-top">
-
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 
@@ -41,6 +43,7 @@
               
         </nav>
         <!-- Page Content-->
+
         <div class="container-fluid p-0">
             <!-- About-->
             <section class="resume-section" id="about">
@@ -241,26 +244,27 @@
 
             </section>
         </div>
-          <!--
-    PeoplePerHour Profile Widget
-    The div#pph-hire me is the element
-    where the iframe will be inserted.
-    You may move this element wherever
-    you need to display the widget
--->
-<div id="pph-hireme" style="text-align:right;object-position: right;"></div>
-<script type="text/javascript">
-(function(d, s) {
-    var useSSL = 'https:' == document.location.protocol;
-    var js, where = d.getElementsByTagName(s)[0],
-    js = d.createElement(s);
-    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1053765164/6332859.js?width=468&height=84&orientation=horizontal&theme=light&rnd='+parseInt(Math.random()*10000, 10);
-    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-}(document, 'script'));
-</script>
+            <!--
+                PeoplePerHour Profile Widget
+                The div#pph-hire me is the element
+                where the iframe will be inserted.
+                You may move this element wherever
+                you need to display the widget
+            -->
+            <div id="pph-hireme" style="text-align:right;object-position: center;"></div>
+                <script type="text/javascript">
+                (function(d, s) {
+                    var useSSL = 'https:' == document.location.protocol;
+                    var js, where = d.getElementsByTagName(s)[0],
+                    js = d.createElement(s);
+                    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1053765164/6332859.js?width=468&height=84&orientation=horizontal&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+                    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+                }(document, 'script'));
+                </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
     </body>
 </html>
